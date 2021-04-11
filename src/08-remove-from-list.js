@@ -17,9 +17,9 @@
  * }
  */
 
-function removeKFromList(/*l, k*/) {
+function removeKFromList(/* l, k */) {
   throw new Error('Not implemented');
- /* let currentItem = l;
+  /* let currentItem = l;
   let nextItem;
   if (currentItem && currentItem.value === k) {
     return currentItem.next;
