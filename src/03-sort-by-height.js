@@ -14,3 +14,10 @@ function sortByHeight(/* arr */) {
 }
 
 module.exports = sortByHeight;
+
+/*
+  1. Make 2 empty arrrays arr1 and arr2
+  2.
+сначала нашел индексы элементов которые -1,
+потом отсортировал без них далее по индексам в
+массив после сортировки -1 вставлял */
