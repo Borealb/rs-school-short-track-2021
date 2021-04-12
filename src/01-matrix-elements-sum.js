@@ -15,14 +15,20 @@
  * The result should be 9
  */
 function getMatrixElementsSum(matrix) {
+  const arrCheck = [];
   let result = 0;
   for (let i = 0; i < matrix.length; i++) {
     for (let j = 0; j < matrix[i].length; j++) {
-      if (matrix[i] !== 0) {
-        result += matrix[i][j];
+      if (arrCheck.indexOf(j) === -1) {
+        if (matrix[i][j] === 0) {
+          arrCheck.push(j);
+        } else {
+          result += matrix[i][j];
+        }
       }
     }
-  } return result;
+  }
+  return result;
 }
 
 module.exports = getMatrixElementsSum;
