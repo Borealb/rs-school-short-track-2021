@@ -13,13 +13,13 @@ function sortByHeight(arr) {
   const sortArr = arr.filter((e) => e !== -1).sort((a, b) => a - b);
   const resultArr = [];
 
-  arr.map((e) => {
+  arr.forEach((e) => {
     if (e === -1) {
       resultArr.push(e);
     } else {
       resultArr.push(sortArr[0]);
       sortArr.shift();
-    } return resultArr;
+    }
   });
 
   return resultArr;
