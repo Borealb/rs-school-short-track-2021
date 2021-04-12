@@ -39,8 +39,8 @@ class Queue {/*
     }
     this.size += 1;
     return node;
-  }  */
-  /*
+  }
+
     let item = new Item(element);
 
     let currentItem;
